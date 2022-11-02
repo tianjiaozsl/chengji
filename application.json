@@ -1,0 +1,25 @@
+{
+  "pages": [
+    {
+      "id": "成绩查询",
+      "isDefault": true
+    },
+    {
+      "id": "教师任课",
+      "isDefault": false
+    },
+    {
+      "id": "赋分查询",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#CCCCCC",
+  "icon": "heart",
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

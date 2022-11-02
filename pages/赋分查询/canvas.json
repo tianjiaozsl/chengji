@@ -1,0 +1,1096 @@
+{
+  "unpublishedPage": {
+    "name": "赋分查询",
+    "slug": "",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 870,
+          "containerStyle": "none",
+          "snapRows": 82,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 830,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container1",
+              "borderColor": "#fff",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "topRow": 0,
+              "bottomRow": 85,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "parentColumnSpace": 19.75,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "children": [
+                {
+                  "labelTextSize": "0.875rem",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "rightColumn": 632,
+                  "detachFromLayout": true,
+                  "widgetId": "xbwcpx3gqn",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 880,
+                  "parentRowSpace": 1,
+                  "isVisible": "true",
+                  "canExtend": false,
+                  "type": "CANVAS_WIDGET",
+                  "version": 1,
+                  "parentId": "b61zyczny1",
+                  "minHeight": 870,
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "borderRadius": "0px",
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select4",
+                      "isFilterable": false,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "科目",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "labelWidth": "2",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "{{kemus.data.values.map((row) => {return {\"label\":row,\"value\":row}})}}",
+                      "placeholderText": "选择",
+                      "isDisabled": false,
+                      "key": "d4l42ia6n9",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 40,
+                      "widgetId": "ttefwqbtut",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "widgetName": "data_table",
+                      "onSort": "",
+                      "columnOrder": [
+                        "kemu",
+                        "name",
+                        "rkbj",
+                        "rbjf",
+                        "junfen",
+                        "jfc",
+                        "rbbfwjf",
+                        "bfwjf",
+                        "bfwjfc",
+                        "bnff",
+                        "knff",
+                        "fufen",
+                        "wenli",
+                        "school_year",
+                        "grade",
+                        "_id",
+                        "exam_name",
+                        "grff"
+                      ],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "primaryColumns.junfen.isCellVisible"
+                        },
+                        {
+                          "key": "primaryColumns.rbjf.isCellVisible"
+                        },
+                        {
+                          "key": "primaryColumns.jfc.isCellVisible"
+                        }
+                      ],
+                      "isVisibleDownload": false,
+                      "topRow": 12,
+                      "bottomRow": 86,
+                      "parentRowSpace": 10,
+                      "onPageChange": "",
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET",
+                      "defaultSelectedRow": "0",
+                      "animateLoading": true,
+                      "parentColumnSpace": 1,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onPageChange"
+                        },
+                        {
+                          "key": "onSearchTextChanged"
+                        },
+                        {
+                          "key": "onSort"
+                        }
+                      ],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns._id.computedValue"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.wenli.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.bnff.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.jfc.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.rbbfwjf.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.junfen.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.school_year.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.kemu.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.knff.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.rkbj.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fufen.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.grade.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.rbjf.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.bfwjf.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.bfwjfc.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.exam_name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.grff.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.junfen.isCellVisible"
+                        },
+                        {
+                          "key": "primaryColumns.rbjf.isCellVisible"
+                        },
+                        {
+                          "key": "primaryColumns.jfc.isCellVisible"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "primaryColumns": {
+                        "wenli": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "wenli",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "文理",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.wenli))}}",
+                          "cellBackground": ""
+                        },
+                        "bnff": {
+                          "index": 1,
+                          "width": 150,
+                          "id": "bnff",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "班内赋分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bnff))}}",
+                          "cellBackground": ""
+                        },
+                        "jfc": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "jfc",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": "{{data_table.sanitizedTableData.map((currentRow) => ( Checkbox1.isChecked))}}",
+                          "isDerived": false,
+                          "label": "均分差",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.jfc))}}",
+                          "cellBackground": ""
+                        },
+                        "rbbfwjf": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "rbbfwjf",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "入班百分位均分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.rbbfwjf))}}",
+                          "cellBackground": ""
+                        },
+                        "junfen": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "junfen",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": "{{data_table.sanitizedTableData.map((currentRow) => ( Checkbox1.isChecked))}}",
+                          "isDerived": false,
+                          "label": "均分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.junfen))}}",
+                          "cellBackground": ""
+                        },
+                        "school_year": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "school_year",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "school_year",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.school_year))}}",
+                          "cellBackground": ""
+                        },
+                        "kemu": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "kemu",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "科目",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.kemu))}}",
+                          "cellBackground": ""
+                        },
+                        "appsmith_mongo_escape_id": {
+                          "isCellVisible": true,
+                          "boxShadow": "none",
+                          "isDerived": false,
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow._id))}}",
+                          "textSize": "0.875rem",
+                          "index": 1,
+                          "isVisible": false,
+                          "label": "_id",
+                          "columnType": "text",
+                          "horizontalAlignment": "LEFT",
+                          "borderRadius": "0px",
+                          "width": 150,
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "id": "_id",
+                          "verticalAlignment": "CENTER"
+                        },
+                        "knff": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "knff",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "科内赋分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.knff))}}",
+                          "cellBackground": ""
+                        },
+                        "rkbj": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "rkbj",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "任课班级",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.rkbj))}}",
+                          "cellBackground": ""
+                        },
+                        "fufen": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "fufen",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "赋分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.fufen))}}",
+                          "cellBackground": ""
+                        },
+                        "grade": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "grade",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "grade",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.grade))}}",
+                          "cellBackground": ""
+                        },
+                        "name": {
+                          "index": 11,
+                          "width": 150,
+                          "id": "name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "姓名",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                          "cellBackground": ""
+                        },
+                        "rbjf": {
+                          "index": 12,
+                          "width": 150,
+                          "id": "rbjf",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": "{{data_table.sanitizedTableData.map((currentRow) => ( Checkbox1.isChecked))}}",
+                          "isDerived": false,
+                          "label": "入班均分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.rbjf))}}",
+                          "cellBackground": ""
+                        },
+                        "bfwjf": {
+                          "index": 13,
+                          "width": 150,
+                          "id": "bfwjf",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "百分位均分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bfwjf))}}",
+                          "cellBackground": ""
+                        },
+                        "bfwjfc": {
+                          "index": 15,
+                          "width": 150,
+                          "id": "bfwjfc",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "百分位均分差",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bfwjfc))}}",
+                          "cellBackground": ""
+                        },
+                        "grff": {
+                          "index": 17,
+                          "width": 150,
+                          "id": "grff",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "个人赋分",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.grff))}}",
+                          "cellBackground": ""
+                        },
+                        "exam_name": {
+                          "index": 16,
+                          "width": 150,
+                          "id": "exam_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "exam_name",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.exam_name))}}",
+                          "cellBackground": ""
+                        }
+                      },
+                      "delimiter": ",",
+                      "derivedColumns": {},
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "textSize": "0.875rem",
+                      "widgetId": "q3xhw4nraf",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": false,
+                      "tableData": "{{FindQuery.data}}",
+                      "isVisible": "true",
+                      "label": "Data",
+                      "searchKey": "",
+                      "version": 3,
+                      "enableClientSideSearch": false,
+                      "parentId": "xbwcpx3gqn",
+                      "serverSidePaginationEnabled": false,
+                      "isLoading": false,
+                      "isVisibleCompactMode": true,
+                      "onSearchTextChanged": "",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "childStylesheet": {
+                        "button": {
+                          "boxShadow": "none",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                        },
+                        "iconButton": {
+                          "boxShadow": "none",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+                        },
+                        "menuButton": {
+                          "boxShadow": "none",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "isVisiblePagination": true,
+                      "primaryColumnId": "kemu",
+                      "verticalAlignment": "CENTER",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "deliveryAddress": 170,
+                        "step": 62,
+                        "id": 228,
+                        "status": 75,
+                        "wenli": 68,
+                        "bnff": 92,
+                        "jfc": 92,
+                        "rbbfwjf": 135,
+                        "junfen": 84,
+                        "kemu": 70,
+                        "knff": 89,
+                        "rkbj": 87,
+                        "fufen": 86,
+                        "name": 84,
+                        "rbjf": 91,
+                        "bfwjf": 106,
+                        "bfwjfc": 116,
+                        "grff": 90
+                      }
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text16",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "parentColumnSpace": 11.78515625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "fontFamily": "System Default",
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{Select1.selectedOptionValue}} {{Select2.selectedOptionValue}} 教师科内赋分",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 53,
+                      "textAlign": "CENTER",
+                      "widgetId": "evmso36br2",
+                      "isVisible": "true",
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select1",
+                      "isFilterable": false,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "年级",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "labelWidth": "2",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"高一\",\n    \"value\": \"高一\"\n  },\n  {\n    \"label\": \"高二\",\n    \"value\": \"高二\"\n  },\n  {\n    \"label\": \"高三\",\n    \"value\": \"高三\"\n  }\n]",
+                      "placeholderText": "选择",
+                      "isDisabled": false,
+                      "key": "d4l42ia6n9",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 9,
+                      "widgetId": "t21f6qhl84",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{exams.run()}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select2",
+                      "isFilterable": false,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "考试",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "labelWidth": "2",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 9,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "{{exams.data.values.map((row) => {return {\"label\":row,\"value\":row}})}}",
+                      "placeholderText": "选择",
+                      "isDisabled": false,
+                      "key": "d4l42ia6n9",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 23,
+                      "widgetId": "q10qqccodd",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select3",
+                      "isFilterable": false,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "文理",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "labelWidth": "2",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 23,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"文科\",\n    \"value\": \"文科\"\n  },\n  {\n    \"label\": \"理科\",\n    \"value\": \"理科\"\n  }\n]",
+                      "placeholderText": "选择",
+                      "isDisabled": false,
+                      "key": "d4l42ia6n9",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 31,
+                      "widgetId": "aweid9g8a6",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{kemus.run()}}"
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{kenei_count.run(() => FindQuery.run(), () => {})}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 56,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "查询",
+                      "isDisabled": false,
+                      "key": "9clpg3wawp",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "ja11pdwj8z",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "widgetName": "Checkbox1",
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "isDisabled": false,
+                      "key": "32wj5xa7d0",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 56,
+                      "widgetId": "5ke1ole9kc",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "显示原始均分",
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "defaultCheckedState": true
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button2",
+                      "onClick": "{{navigateTo('https://dsm.zmz9877.top:8443/?launchApp=SYNO.SDS.PDFViewer.Application&SynoToken=kreYpfi26jsz2&launchParam=path%3D%252Fhome%252F%25E6%25BE%2584%25E5%259F%258E%25E4%25B8%25AD%25E5%25AD%25A6%25E5%259F%25BA%25E7%25A1%2580%25E5%25B9%25B4%25E7%25BA%25A7%25E6%2595%2599%25E5%25AD%25A6%25E8%25B4%25A8%25E9%2587%258F%25E8%2580%2583%25E8%25AF%2584%25E5%258A%259E%25E6%25B3%2595.pdf', {},'NEW_WINDOW')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 56,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "查看方案",
+                      "isDisabled": false,
+                      "key": "t99aae4pe3",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "w9ox0j9ihy",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "xbwcpx3gqn",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    }
+                  ]
+                }
+              ],
+              "borderWidth": "0",
+              "labelTextSize": "0.875rem",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 64,
+              "widgetId": "b61zyczny1",
+              "containerStyle": "card",
+              "isVisible": "true",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "赋分查询_FindQuery",
+              "name": "FindQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "kenei_count.data.n",
+                "Select1.selectedOptionValue",
+                "Select3.selectedOptionValue",
+                "Select4.selectedOptionValue",
+                "Select2.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "赋分查询_kenei_count",
+              "name": "kenei_count",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select1.selectedOptionValue",
+                "Select3.selectedOptionValue",
+                "Select2.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "赋分查询_exams",
+              "name": "exams",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select1.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "赋分查询_kemus",
+              "name": "kemus",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select1.selectedOptionValue",
+                "Select3.selectedOptionValue",
+                "Select2.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "mongoEscapedWidgetNames": [
+          "data_table"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "赋分查询",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6360ebd9f25cfd60a88d6cbe_6361bdf2f25cfd60a88d6d57"
+}
