@@ -1024,22 +1024,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "赋分查询_FindQuery",
-              "name": "FindQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "kenei_count.data.n",
-                "Select1.selectedOptionValue",
-                "Select3.selectedOptionValue",
-                "Select4.selectedOptionValue",
-                "Select2.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "赋分查询_kenei_count",
               "name": "kenei_count",
               "confirmBeforeExecute": false,

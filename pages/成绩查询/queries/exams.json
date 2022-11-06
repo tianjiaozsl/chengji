@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "FindQuery",
+    "name": "exams",
     "datasource": {
       "name": "cczx",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "赋分查询",
+    "pageId": "成绩查询",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -28,10 +28,10 @@
           }
         },
         "collection": {
-          "data": "kenei"
+          "data": "score"
         },
         "command": {
-          "data": "FIND"
+          "data": "DISTINCT"
         },
         "count": {
           "query": {
@@ -48,10 +48,10 @@
         },
         "distinct": {
           "query": {
-            "data": ""
+            "data": "{\"school_year\":\"2022-2023\",\"grade\":\"{{Select1.selectedOptionValue}}\"}"
           },
           "key": {
-            "data": ""
+            "data": "exam_name"
           }
         },
         "find": {
@@ -59,13 +59,13 @@
             "data": ""
           },
           "query": {
-            "data": "{\"school_year\":\"2022-2023\",\"grade\":\"{{Select1.selectedOptionValue}}\",\"wenli\":\"{{Select3.selectedOptionValue}}\",\"exam_name\":\"{{Select2.selectedOptionValue}}\",\"kemu\":\"{{Select4.selectedOptionValue}}\"}\n"
+            "data": ""
           },
           "sort": {
             "data": ""
           },
           "limit": {
-            "data": "{{kenei_count.data.n}}"
+            "data": ""
           },
           "projection": {
             "data": ""
@@ -78,7 +78,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"find\": \"kenei\",\n  \"filter\": {\"school_year\":\"2022-2023\",\"grade\":\"{{Select1.selectedOptionValue}}\",\"wenli\":\"{{Select3.selectedOptionValue}}\",\"exam_name\":\"{{Select2.selectedOptionValue}}\",\"kemu\":\"{{Select4.selectedOptionValue}}\"}\n,\n  \"limit\": {{kenei_count.data.n}},\n  \"batchSize\": {{kenei_count.data.n}}\n}\n",
+            "data": "{\n  \"distinct\": \"score\",\n  \"query\": {\"school_year\":\"2022-2023\",\"grade\":\"{{Select1.selectedOptionValue}}\"},\n  \"key\": \"exam_name\"\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -98,31 +98,24 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "formData.find.query.data"
-      },
-      {
-        "key": "formData.find.limit.data"
+        "key": "formData.distinct.query.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select1.selectedOptionValue",
-      "Select2.selectedOptionValue",
-      "Select3.selectedOptionValue",
-      "Select4.selectedOptionValue",
-      "kenei_count.data.n"
+      "Select1.selectedOptionValue"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "赋分查询_FindQuery",
+  "id": "成绩查询_exams",
   "deleted": false,
-  "gitSyncId": "6360ebd9f25cfd60a88d6cbe_6361cb50f25cfd60a88d6d5c"
+  "gitSyncId": "6360ebd9f25cfd60a88d6cbe_636643f83d3ef95400927bc7"
 }
