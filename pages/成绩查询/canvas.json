@@ -974,18 +974,6 @@
                 "Select1.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "成绩查询_find_score",
-              "name": "find_score",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Select1.selectedOptionValue",
-                "Input1.text",
-                "Select2.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ]
         ],
