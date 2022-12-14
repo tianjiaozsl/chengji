@@ -650,8 +650,7 @@
                         }
                       ],
                       "privateWidgets": {
-                        "Text3Copy": true,
-                        "Text3": true
+                        "undefined": true
                       },
                       "key": "h0rr8kzqiu",
                       "backgroundColor": "transparent",
@@ -838,7 +837,7 @@
                 }
               ],
               "labelPosition": "Left",
-              "options": "[\n  {\n    \"label\": \"高一\",\n    \"value\": \"高一\"\n  },\n  {\n    \"label\": \"高二\",\n    \"value\": \"高二\"\n  },\n  {\n    \"label\": \"高三\",\n    \"value\": \"高三\"\n  }\n]",
+              "options": "[\n  {\n    \"label\": \"高一\",\n    \"value\": \"高一\"\n  },\n  {\n    \"label\": \"高二\",\n    \"value\": \"高二\"\n  },\n  {\n    \"label\": \"高三\",\n    \"value\": \"高三\"\n  },\n  {\n    \"label\": \"自强\",\n    \"value\": \"自强\"\n  }\n]",
               "placeholderText": "选择",
               "isDisabled": false,
               "key": "d4l42ia6n9",

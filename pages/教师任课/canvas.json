@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 67,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -79,7 +79,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.renkebanji))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "11",
+                      "sourceData": "9",
                       "isCustomField": false,
                       "accessor": "renkebanji",
                       "identifier": "renkebanji",
@@ -123,7 +123,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tea_name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "张连芳",
+                      "sourceData": "李晓红",
                       "isCustomField": false,
                       "accessor": "tea_name",
                       "identifier": "tea_name",
@@ -191,9 +191,9 @@
                   "sourceData": {
                     "kemu": "语文",
                     "wenli": "不分科",
-                    "renkebanji": "11",
+                    "renkebanji": "9",
                     "grade": "高一",
-                    "tea_name": "张连芳",
+                    "tea_name": "李晓红",
                     "school_year": "2021-2022",
                     "exam_name": "上月考1"
                   },
@@ -1566,6 +1566,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "mongoEscapedWidgetNames": [
           "data_table"
         ],
